@@ -35,8 +35,8 @@ public class MyProgram
        if (minusIsnotANum||plusIsnotANum){
            System.out.println("Graph does not cross the Y axis");
        } else {
-       System.out.println("plusFinal "+ plusFinal);
-       System.out.println("minusFinal " +minusFinal);
+           System.out.println("plusFinal " + plusFinal);
+           System.out.println("minusFinal " + minusFinal);
        };
        
       
