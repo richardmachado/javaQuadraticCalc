@@ -4,7 +4,10 @@ public class file
 {
     public static void main(String[] args)
     {
+        boolean isValid =true;
         try (Scanner scanner = new Scanner(System.in)) {
+            while (isValid){
+           
             System.out.print("Enter variable a: ");
             double varA = scanner.nextDouble();
             
@@ -19,13 +22,17 @@ public class file
  
             double plusFinal = ((varB*-1)+ squareRoot)/bottom;
             double minusFinal = ((varB*-1) - squareRoot)/bottom; 
-            
+        
+          
             if (varC>=0.0 && varA>=0.0 || varA<=0.0 && varC<=0.0){
                 System.out.println("A and C cannot be positive/negative at the same time");
             } else {
+               isValid = false;
                 System.out.printf( "x= %.3f\n", plusFinal);
-                System.out.println("x= " + minusFinal);
+                System.out.printf("x= %.3f\n", + minusFinal);
             }
         }
+    }
+        
     }
 }
